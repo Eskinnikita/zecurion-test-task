@@ -1,24 +1,13 @@
-# zecurion-test-task
-
-## Project setup
+# Тестовое задание для компании zecurion
+Тестовое задание выполнено с использованием JS-фрейморка Vue.JS 3 (в синтаксисе script setup) и UI-библиотеки Vuetify 3. В качестве глобального хранилища использовалась библиотека Pinia.
+## Запуск проекта
 ```
 npm install
 ```
-
-### Compiles and hot-reloads for development
 ```
 npm run serve
 ```
-
-### Compiles and minifies for production
+## Сборка проекта
 ```
 npm run build
 ```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
