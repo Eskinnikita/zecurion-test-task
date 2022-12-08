@@ -84,7 +84,9 @@ function addNewItem(arrToAdd, key, inputValue, resetKey) {
   };
   newItem[key] = inputValue;
   eventsStore.addItem(arrToAdd, newItem);
-  this[resetKey] = "";
+  taskTitle.value = "";
+  date.value = "";
+  status.value = "";
 }
 </script>
 
