@@ -12,7 +12,7 @@
           :disabled="addTaskButtonDisabled"
           width="100%"
           variant="outlined"
-          @click="addNewItem('tasks', 'title', taskTitle, 'taskTitle')"
+          @click="addNewItem('tasks', 'title', taskTitle)"
           >Add</v-btn
         >
       </v-list-item>
@@ -28,7 +28,7 @@
           :disabled="addDateButtonDisabled"
           width="100%"
           variant="outlined"
-          @click="addNewItem('dates', 'date', date, 'date')"
+          @click="addNewItem('dates', 'date', date)"
           >Add</v-btn
         >
       </v-list-item>
@@ -48,7 +48,7 @@
           :disabled="addStatusButtonDisabled"
           width="100%"
           variant="outlined"
-          @click="addNewItem('statuses', 'status', status, 'status')"
+          @click="addNewItem('statuses', 'status', status)"
           >Add</v-btn
         >
       </v-list-item>
@@ -78,7 +78,7 @@ const addTaskButtonDisabled = computed(() => taskTitle.value.trim() === "");
 const addDateButtonDisabled = computed(() => date.value.trim() === "");
 const addStatusButtonDisabled = computed(() => status.value.trim() === "");
 
-function addNewItem(arrToAdd, key, inputValue, resetKey) {
+function addNewItem(arrToAdd, key, inputValue) {
   const newItem = {
     id: eventsStore.generateId(),
   };
