@@ -78,15 +78,19 @@ const addTaskButtonDisabled = computed(() => taskTitle.value.trim() === "");
 const addDateButtonDisabled = computed(() => date.value.trim() === "");
 const addStatusButtonDisabled = computed(() => status.value.trim() === "");
 
+function resetInputs() {
+  taskTitle.value = "";
+  date.value = "";
+  status.value = "";
+}
+
 function addNewItem(arrToAdd, key, inputValue) {
   const newItem = {
     id: eventsStore.generateId(),
   };
   newItem[key] = inputValue;
   eventsStore.addItem(arrToAdd, newItem);
-  taskTitle.value = "";
-  date.value = "";
-  status.value = "";
+  resetInputs();
 }
 </script>
 
