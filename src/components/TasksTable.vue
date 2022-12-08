@@ -83,7 +83,6 @@ function updateEvent(event, e) {
 </script>
 
 <style scoped lang="scss">
-@import "vue-select-3/src/scss/vue-select.scss";
 .tasks-table {
   &__small-input {
     border: 1px solid #666;
